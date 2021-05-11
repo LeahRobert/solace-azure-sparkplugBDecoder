@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PowerBIFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "SpBDecoder"
+    }
+  }
+}

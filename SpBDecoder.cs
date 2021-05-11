@@ -48,6 +48,7 @@ namespace Com.Cirruslink.Sparkplug.Protobuf
         private async static Task PublishToSolace(string body, ILogger log)
         {
 
+            // Set the REST hostname and port for the Solace broker (eg. http://solace:9000/)
             string solaceURL = "";
 
             JObject rss = JObject.Parse(body);
@@ -85,7 +86,7 @@ namespace Com.Cirruslink.Sparkplug.Protobuf
                 }
 
                 // Populate Solace URL with device alias
-                solaceURL = "http://vmpp3r5gdtl2i3i0.centralus.cloudapp.azure.com:9000/" + solaceTopic;
+                solaceURL = solaceURL + solaceTopic;
 
                 log.LogInformation("published body: " + jsonBody.ToString());
 

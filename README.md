@@ -1,4 +1,4 @@
-# Azure Function that receives data via HTTP Trigger (eg. from Solace RDP), and decodes DDATA events in SparkplugB protocol to JSON.
+# Azure Function SparkplugB Decoder
 
 ## Overview
 
